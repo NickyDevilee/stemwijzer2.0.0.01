@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>stemwijzertje</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="col-md-12 text-center">
+			<button id="start" onclick="start()" class="btn btn-success">Start</button>
+
+			<h1 id="title">test</h1>
+			<p id="opinion">test</p>
+			<div class="row">
+				<div class="col-md-2 text-center">
+					<button id="Eens" onclick="vote('eens')" class="btn btn-success">Eens</button>
+				</div>
+				<div class="col-md-2 text-center">
+					<button id="Oneens" onclick="vote('oneens')" class="btn btn-danger">Oneens</button>
+				</div>
+				<div class="col-md-2 text-center">
+					<button id="Geen" onclick="vote('none')" class="btn btn-warning">Geen mening</button>
+					<button id="loadBigParties" onclick="getBigParties()" class="btn btn-success">Load big parties</button>
+				</div>
+				<div class="col-md-2 text-center">
+					<button id="terug" onclick="lastQuestion()" class="btn btn-primary">Ga terug</button>
+					<button id="loadSeculierParties" onclick="getSeculierParties()" class="btn btn-success">Load seculier parties</button>
+				</div>
+				<div class="col-md-2 text-center">
+					<button id="Volgende" onclick="nextQuestion()" class="btn btn-dark">Volgende</button>
+				</div>
+			</div>
+			<div id="allParties">
+				
+			</div>
+			<div id="bigParties">
+				
+			</div>
+			<div id="seculierParties">
+				
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="http://stemwijzer.dvc-icta.nl/data.js"></script> 
+<!-- http://stemwijzer.dvc-icta.nl/data.js -->
+<script type="text/javascript" src="js/func.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</html>
