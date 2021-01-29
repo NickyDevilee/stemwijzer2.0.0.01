@@ -165,6 +165,19 @@ function search(nameKey, myArray){
 function loadResult() {
 	// console.log(pointsPerParty);
 	pointsPerPartySorted = Object.entries(pointsPerParty).sort((a, b) => b[1] - a[1]).map((el) => el[0]);
+
+// uitleg sort functie
+// pointsPerPartySorted = Object.entries(pointsPerParty);
+
+// pointsPerPartySorted.sort(function(a, b) { 
+//     return b[1] - a[1]
+// });
+
+// pointsPerPartySorted.map(function(el) {
+//     return el[0]
+// });
+	
+	
 	// console.log(pointsPerPartySorted);
 	for (var i = 0; i < 23; i++) {
 		pointsPerPartySorted[i]; // title
